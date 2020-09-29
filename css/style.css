@@ -1,0 +1,48 @@
+
+@-webkit-keyframes b {
+	0%{background-color: #FF9B4F;}
+	100%{background-color: #0291A3;}
+}
+@-webkit-keyframes bb {
+	0%{background-color: #0291A3; width: 50px; height: 50px;}
+	100%{background-color: #FF9B4F; width: 100px; height: 100px;}
+}
+@-webkit-keyframes bbb {
+	0%{background-color: #0291A3; width: 50px; height: 50px;}
+	100%{background-color: #FF9B4F; width: 100px; height: 100px;}
+}
+@-webkit-keyframes bbbb {
+	0%{background-color: #FF9B4F;}
+	100%{background-color: #0291A3;}
+}
+@-webkit-keyframes p {
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.bbigbox {width: 800px; height: 400px; background-color: white; display: flex;
+		align-items: flex-start;}
+.bigbox {width: 400px; height: 400px; background-color: white;}
+.middlebox {width: 400px; height: 100px; background-color: white; display: flex;
+		align-items: center; justify-content: space-around; }
+.box1 {width: 50px; height: 50px; background-color: #FF9B4F;
+		transition-property : all; transition-duration:1s; 
+		animation: b; animation-fill-mode: forwards; animation-duration: 1s; animation-play-state: paused;}
+.box2 {width: 50px; height: 50px; background-color: #0291A3; animation: bb;
+		transition-property: all; transition-duration:2s; 
+	animation-fill-mode: forwards; animation-duration: 0.1s; animation-play-state: paused;}
+.box3 {width: 50px; height: 50px; background-color: #0291A3; animation: bbb;
+		transition-property: all; transition-duration:2s; 
+	animation-fill-mode: forwards; animation-duration: 0.1s; animation-play-state: paused;}
+.box4 {width: 50px; height: 50px; background-color: #FF9B4F; animation: bbbb;
+		transition-property : all; transition-duration:0.8s; 
+		 animation-fill-mode: forwards; animation-duration: 1s; animation-play-state: paused;}
+.box5 {width: 50px; height: 50px; background-color: #FF9B4F; animation: bbbb;
+		transition-property : all; transition-duration:0.8s; 
+		 animation-fill-mode: forwards; animation-duration: 1s; animation-play-state: paused;}
+.p{animation: p; animation-fill-mode: forwards; animation-duration: 4s; animation-play-state: paused;}		 
+.box1:hover {transform:rotateX(180deg); animation-play-state: running;}
+.box2:hover {transform:rotateY(480deg); animation-play-state: running;}
+.box3:hover {transform:rotateX(720deg); animation-play-state: running;}
+.box4:hover {transform:translateX(100px); animation-play-state: running;}
+.box5:hover {transform:translateX(-100px); animation-play-state: running;}
+.p:hover {animation-play-state: running;}
